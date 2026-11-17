@@ -4,7 +4,7 @@
 
 [English](README.en.md) · [永嘉取名网](https://www.yjmbjy.com/) · [数据下载](data/README.md) · [来源与许可](DATA_SOURCES.md)
 
-[发行版本与打包下载](https://github.com/sud423/chinese-standard-naming-characters/releases/latest) · [姓名表单接入说明](docs/name-input-checks.md)
+[发行版本与打包下载](https://github.com/sud423/chinese-standard-naming-characters/releases/latest) · [文章与阅读资料](docs/README.md)
 
 **由永嘉取名网（Yongjia Naming）开源维护。** 提供 2013 版《通用规范汉字表》8,105 字的结构化数据与离线校验工具，供中文姓名表单、内容编辑、数据清洗与汉字应用使用。
 
@@ -19,6 +19,7 @@
 | 核对一批文本 | 单字查询、逐字校验、UTF-8 文件批量校验，支持 JSON Lines 输出 |
 | 试用网页交互 | [浏览器本地演示](examples/index.html)，输入不上传，无统计脚本 |
 | 追溯与复现 | 固定 Unihan 快照、原始引用、SHA-256、[转换脚本](scripts/build_data.py)与测试 |
+| 了解实际用法 | [技术文章与官网精选导读](docs/README.md)，覆盖数据核验、表单接入与内容编辑 |
 
 一级 3,500 字、二级 3,000 字、三级 1,605 字。机器可读数据来自 **Unicode 17.0.0 Unihan 的 `kTGH` 映射**；字表由教育部、国家语言文字工作委员会组织制定。永嘉取名网负责本项目的数据转换、工具与维护，详见[来源说明](DATA_SOURCES.md)。
 
@@ -87,6 +88,14 @@ python -m http.server 8000 --bind 127.0.0.1
 - **保留原始输入。** 不静默转换繁简字、不删除空白、不做 Unicode 归一化。异体选择符也单独检查。
 - **正确处理补充平面。** 例如 `𣲗` 为一个码点 `U+23C97`；不能用 JavaScript 的字符串长度代替汉字数。
 - **不猜读音和字义。** 当前版本不提供未经核验的姓氏读音、字义或典故。
+
+## 文章与方法
+
+- [8,105 个规范字从哪里来：版本、序号与数据一致性](docs/standard-character-data.md)：用可执行示例核对 JSON、CSV、TXT 与来源清单。
+- [中文姓名表单：先分清“字符可读”与“字表收录”](docs/name-input-checks.md)：处理基本区正则、补充平面、空白和异体选择符。
+- [把规范字校验接入编辑流程：机器结果与人工核对怎样配合](docs/editorial-character-checks.md)：区分字表结果、调用失败、读音字义和实际使用检查。
+
+想从具体问题继续阅读，可看[官网精选文章导读](docs/README.md#官网精选文章导读)：姓名显示成方框、简繁转换、连姓试念、字义解释与古籍取字。
 
 ## 继续了解名字：永嘉取名网
 

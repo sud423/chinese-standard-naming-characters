@@ -4,7 +4,7 @@
 
 [中文](README.md) · [Yongjia Naming / 永嘉取名网](https://www.yjmbjy.com/) · [Download data](data/README.md)
 
-[Releases & packaged downloads](https://github.com/sud423/chinese-standard-naming-characters/releases/latest)
+[Releases & packaged downloads](https://github.com/sud423/chinese-standard-naming-characters/releases/latest) · [Articles & reading guide (Chinese)](docs/README.md)
 
 **Maintained by Yongjia Naming (永嘉取名网).** An offline dataset and toolkit for
 checking whether each character in Chinese names or text belongs to the 2013
@@ -97,6 +97,23 @@ Supplementary-plane characters such as `𣲗` (`U+23C97`) are handled as one sca
 The upstream `kTGH` property is provisional. This release verifies completeness,
 indices, code points, checksums and artifact consistency; it does not claim a
 manual comparison of every glyph with the official PDF.
+
+## Articles and practical guides
+
+The following original guides are available in Chinese:
+
+- [Where the 8,105 entries come from](docs/standard-character-data.md): pinned
+  versions, table indices, and executable JSON / CSV / TXT consistency checks.
+- [Unicode boundaries in Chinese name forms](docs/name-input-checks.md):
+  supplementary-plane characters, whitespace, and variation selectors.
+- [Character checks in an editorial workflow](docs/editorial-character-checks.md):
+  interpreting membership, handling failures, and separating checks that need
+  pronunciation, meaning, or real-world context.
+
+The [reading guide](docs/README.md#官网精选文章导读) also introduces selected
+Yongjia Naming articles on missing glyphs, simplified/traditional conversions,
+spoken names, character meanings, and classical sources. Follow each article
+link to read the full text on the maintainer's website.
 
 ## About Yongjia Naming
 
