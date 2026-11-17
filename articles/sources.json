@@ -1,6 +1,9 @@
 {
-  "selection": "existing published Yongjia Naming articles",
-  "synced_at_utc": "2026-11-17T05:11:59.001707+00:00",
+  "schema_version": 2,
+  "content_mode": "reading-guides",
+  "updated_at_utc": "2026-11-17T08:14:53.4571646+00:00",
+  "source_snapshot_verified_at_utc": "2026-11-17T05:11:59.0017070+00:00",
+  "text_count_method": "当前独立导读段落的非空白字符数；排除标题、图片alt和导航。source_html_sha256对应source_snapshot_verified_at_utc时核对的官网页面。",
   "articles": [
     {
       "path": "articles/couple-elders-naming-filter-sequence.md",
@@ -9,8 +12,9 @@
       "source_url": "https://www.yjmbjy.com/article/couple-elders-naming-filter-sequence",
       "source_published_at": "2026-11-16T14:37:09+08:00",
       "source_html_sha256": "c26780c39c1d04dfeb4d361c08a94a2237feb5b1608a1d985f570379fc98b296",
-      "markdown_sha256": "b304fd898d2a0dbbfbe9fcaba33fd84efb485265cdc4859bbc972d01104ef4b3",
-      "body_text_characters": 1024,
+      "summary": "家谱、纪念与日常叫法，常是家庭选名分歧背后的不同考虑。原文介绍如何把这些考虑整理成共同条件，再用相同方式比较候选，适合正在和长辈商量名字的家庭阅读。",
+      "summary_text_characters": 74,
+      "markdown_sha256": "de776b8a122a223840918feb1a9ac2a5638a7286a5a54ffa138e5a08d774ba2f",
       "image": {
         "path": "assets/articles/couple-elders-naming-filter-sequence.jpg",
         "alt": "祖父母与年轻夫妻坐在露台上喝茶交谈",
@@ -18,14 +22,7 @@
         "download_url": "https://www.yjmbjy.com/media/responsive/jpeg-q82-v1/bb56d8f93e05f2fbb44905d8122da6d251b167efb54b1bbcb27b685e38d84883-800.jpg",
         "sha256": "ca8d6746e4b3df14dc82eafddbb730d8c7dbfdedfefe745e9a8446b3012a67eb",
         "bytes": 94583
-      },
-      "links": [
-        {
-          "source": "https://www.yjmbjy.com/article/meaning-and-family-wishes",
-          "target": "meaning-and-family-wishes.md"
-        }
-      ],
-      "faq_count": 1
+      }
     },
     {
       "path": "articles/peixing-nvhai-qiming.md",
@@ -34,8 +31,9 @@
       "source_url": "https://www.yjmbjy.com/article/peixing-nvhai-qiming",
       "source_published_at": "2026-10-19T12:31:04+08:00",
       "source_html_sha256": "d7a40ff6fdd817d147be2896058f15e8bca0cb10255fb900660ce8b2df2885f5",
-      "markdown_sha256": "445d75598acad089a9951ed0bb12c47f5ca2fc5f2654d9203e952b5d5d20bcfb",
-      "body_text_characters": 711,
+      "summary": "想比较裴姓女孩名字，可以先看看同一个姓氏怎样承接不同的用字与心意。原文围绕三组候选，分别说明完整读音、字义取舍与口头介绍时需要注意的地方。",
+      "summary_text_characters": 69,
+      "markdown_sha256": "8f89e71521c0b74a80b1f817da7499b3fbccf9a5cad991a95547315579838495",
       "image": {
         "path": "assets/articles/peixing-nvhai-qiming.jpg",
         "alt": "清水旁的素玉与草木新叶",
@@ -43,22 +41,7 @@
         "download_url": "https://www.yjmbjy.com/media/responsive/jpeg-q82-v1/2a81a2d55d68f9187481a26f69319f990cdbb9838b2ceb6b711aa923109c4f0a-800.jpg",
         "sha256": "c004a7bbeb79913e15ad6791deb78c0d38b741da4f09924016611fbc0ac3e7ae",
         "bytes": 108119
-      },
-      "links": [
-        {
-          "source": "https://www.yjmbjy.com/baby-naming/name-detail?article=peixing-nvhai-qiming&editorial=0&editorial_revision=4534dc0cb8951c8872f973bbee51ba6a09bd25e1a64c9940d751ed467a9c0342",
-          "target": "https://www.yjmbjy.com/baby-naming/name-detail?article=peixing-nvhai-qiming&editorial=0&editorial_revision=4534dc0cb8951c8872f973bbee51ba6a09bd25e1a64c9940d751ed467a9c0342"
-        },
-        {
-          "source": "https://www.yjmbjy.com/article/quming-bihua",
-          "target": "https://www.yjmbjy.com/article/quming-bihua"
-        },
-        {
-          "source": "https://www.yjmbjy.com/article/same-sound-different-character",
-          "target": "https://www.yjmbjy.com/article/same-sound-different-character"
-        }
-      ],
-      "faq_count": 0
+      }
     },
     {
       "path": "articles/dan-character.md",
@@ -67,8 +50,9 @@
       "source_url": "https://www.yjmbjy.com/article/dan-character",
       "source_published_at": "2026-10-24T12:58:16+08:00",
       "source_html_sha256": "d52ce15b9711fd7e27ac59ab4d2dc868395ec0370d9382de450b9be4501c050b",
-      "markdown_sha256": "d83ce5c5f7721aa2546e82b3d5d5389236fa18780dbf4cb8d182140ca8711452",
-      "body_text_characters": 1345,
+      "summary": "喜欢丹字，却还没想好怎样搭配？原文比较以颜色和赤诚为出发点的不同组合，并把解释、声调与连姓叫读放在一起考虑。",
+      "summary_text_characters": 54,
+      "markdown_sha256": "3483eac6717784e8e38e470209c01fe0fd5acef46a75f491c49a8e30848a4c45",
       "image": {
         "path": "assets/articles/dan-character.jpg",
         "alt": "瓷碟中的红色颜料、毛笔与纸上的淡红笔触",
@@ -76,18 +60,7 @@
         "download_url": "https://www.yjmbjy.com/media/responsive/jpeg-q82-v1/82c396d3ae442992ccae9e71499d10a418fc209b08fe827232cb8c18cd7a986d-800.jpg",
         "sha256": "1093b3c25869611a639bad7e6050a64b63c36558e0e008abfd0110e3b4fa2ba2",
         "bytes": 71782
-      },
-      "links": [
-        {
-          "source": "https://www.yjmbjy.com/article/color-characters-baby-name",
-          "target": "https://www.yjmbjy.com/article/color-characters-baby-name"
-        },
-        {
-          "source": "https://www.yjmbjy.com/article/mingzi-tongshengdiao",
-          "target": "https://www.yjmbjy.com/article/mingzi-tongshengdiao"
-        }
-      ],
-      "faq_count": 0
+      }
     },
     {
       "path": "articles/three-scene-name-voice-test-checklist.md",
@@ -96,8 +69,9 @@
       "source_url": "https://www.yjmbjy.com/article/three-scene-name-voice-test-checklist",
       "source_published_at": "2026-11-17T10:47:34+08:00",
       "source_html_sha256": "b273d5ca9318f166d7ee3233dcd3d80eee654bc128510ffc5352a55170fe6598",
-      "markdown_sha256": "b1516a9a5344a3037e7cb0017ae379682dd7fac417bf9c5084b2376dda9d01fc",
-      "body_text_characters": 1059,
+      "summary": "纸面上喜欢一个名字，实际叫起来是否清楚，还需要听读反馈。原文用点名、自我介绍和家庭方言三个场景说明怎样记录听错、报字与连读问题。",
+      "summary_text_characters": 64,
+      "markdown_sha256": "6632ba6b8bc633745490dc75b7f7d48d01cc6b9968bf2738c7f466d2cded38b8",
       "image": {
         "path": "assets/articles/three-scene-name-voice-test-checklist.jpg",
         "alt": "家中餐桌旁轻声交谈的母女",
@@ -105,9 +79,7 @@
         "download_url": "https://www.yjmbjy.com/media/responsive/jpeg-q82-v1/8a037ff9288811451a367ab0dcfaaaa0b8e6756b86d9df4e80dd8f09d840302e-800.jpg",
         "sha256": "f77739e754afe7aaa5fa80d0ee80059b8472539e7d2c1463cd759f965e88969c",
         "bytes": 65061
-      },
-      "links": [],
-      "faq_count": 2
+      }
     },
     {
       "path": "articles/meaning-and-family-wishes.md",
@@ -116,8 +88,9 @@
       "source_url": "https://www.yjmbjy.com/article/meaning-and-family-wishes",
       "source_published_at": "2026-10-25T11:35:28+08:00",
       "source_html_sha256": "410e18755fbc4a4f2d81336ff2f6e4ddc54a2bae35a0280874da3b1ad8b18ef3",
-      "markdown_sha256": "fa4fffb42aa1814030258f8ceb188414e11a5cda6cd0adf9766802c89998cd24",
-      "body_text_characters": 848,
+      "summary": "介绍名字时，字典释义、两个字组合后的理解与家庭愿望，怎样才能衔接自然？原文讨论这三者的边界，适合选名时核对解释，也适合编辑检查姓名文案。",
+      "summary_text_characters": 68,
+      "markdown_sha256": "95d56484575831f1f9668edb37caeb034054491540fe231df9f1fc2a0f3eabce",
       "image": {
         "path": "assets/articles/meaning-and-family-wishes.jpg",
         "alt": "窗边家长与孩子一起翻看书本，桌上放着一片绿叶",
@@ -125,18 +98,7 @@
         "download_url": "https://www.yjmbjy.com/media/responsive/jpeg-q82-v1/1b82c596c42fcee69b26c755b1d5b99980b901e6ffe70cac052a2f9e9b8e7dc4-800.jpg",
         "sha256": "0cd77fb700eb12785adcfca260cfc7d24dc6e814b9eff33e0bf856fad15937f7",
         "bytes": 89337
-      },
-      "links": [
-        {
-          "source": "https://www.yjmbjy.com/article/verb-characters-name-family-wish",
-          "target": "https://www.yjmbjy.com/article/verb-characters-name-family-wish"
-        },
-        {
-          "source": "https://www.yjmbjy.com/article/chengyu-baobao-mingzi",
-          "target": "https://www.yjmbjy.com/article/chengyu-baobao-mingzi"
-        }
-      ],
-      "faq_count": 0
+      }
     },
     {
       "path": "articles/shijing-luming-character-choices-beyond-youyou.md",
@@ -145,8 +107,9 @@
       "source_url": "https://www.yjmbjy.com/article/shijing-luming-character-choices-beyond-youyou",
       "source_published_at": "2026-11-15T14:27:00+08:00",
       "source_html_sha256": "6f9ecab31ae2465608603b48ffc0384340968f820e1b0e5c3c2b2efa2e0de875",
-      "markdown_sha256": "8919493ffa4d399168f17779dd9957a4dbd66633fd51fe3d1c71b6492afcc635",
-      "body_text_characters": 870,
+      "summary": "从《鹿鸣》选字，怎样兼顾诗篇语境与今天的使用？原文沿待客、器乐和草木三条线索展开，说明古义、现代联想与姓名使用之间需要分别判断的地方。",
+      "summary_text_characters": 67,
+      "markdown_sha256": "263471d45a8205dca33ed1767a6ad9ce3de0385710f8f1b04afb4f0cc1d7e46b",
       "image": {
         "path": "assets/articles/shijing-luming-character-choices-beyond-youyou.jpg",
         "alt": "清晨薄雾笼罩的幽静树林空地里，两头梅花鹿安静停步站在金色野生蒿草丛间",
@@ -154,19 +117,7 @@
         "download_url": "https://www.yjmbjy.com/media/responsive/jpeg-q82-v1/2fcd46b50cb7253a077ba3cd6b6d25a93b6aaf70e2edfaff81368567dda50bcb-800.jpg",
         "sha256": "a8a21d8253224789dbb8210a3d6223463b0d1002423fb4217168f7c1ea104a7d",
         "bytes": 79077
-      },
-      "links": [
-        {
-          "source": "https://www.yjmbjy.com/article/shijing-naming-precautions",
-          "target": "https://www.yjmbjy.com/article/shijing-naming-precautions"
-        },
-        {
-          "source": "https://www.yjmbjy.com/article/plant-characters-real-meaning",
-          "target": "https://www.yjmbjy.com/article/plant-characters-real-meaning"
-        }
-      ],
-      "faq_count": 0
+      }
     }
-  ],
-  "text_count_method": "正文及小标题、FAQ的非空白字符数；排除主标题、署名、图片alt、导航与选编说明。"
+  ]
 }

@@ -1,30 +1,10 @@
-# 永嘉取名网
+# 永嘉取名网 · 规范汉字数据与校验工具
 
-![永嘉取名网：把名字里的读音、字义与心意讲清楚](assets/yongjia-open-source.svg)
+![永嘉取名网：规范汉字开放数据与离线校验工具](assets/yongjia-open-source.svg)
 
-[取名文章](articles/README.md) · [在线起名](https://www.yjmbjy.com/baby-naming) · [官网](https://www.yjmbjy.com/) · [English](README.en.md)
+[数据下载](data/README.md) · [技术文章](docs/README.md) · [取名文章导读](articles/README.md) · [官网](https://www.yjmbjy.com/) · [English](README.en.md)
 
-一个名字，要读得清楚、写得明白，也要能说出家里喜欢它的理由。这里收录永嘉取名网的完整取名文章，并开放规范汉字数据与离线校验工具。
-
-## 先读一篇
-
-### [名字的好寓意，字典里都能查到吗](articles/meaning-and-family-wishes.md)
-
-[![窗边家长与孩子一起翻看书本，桌上放着一片绿叶](assets/articles/meaning-and-family-wishes.jpg)](articles/meaning-and-family-wishes.md)
-
-字典里的含义、两个字组合后的理解、家人的心愿，可以相连，也需要分别讲清。一篇文章，帮你把名字的解释落到具体处。
-
-[阅读全文 →](articles/meaning-and-family-wishes.md)
-
-## 从你关心的问题开始
-
-- **家里意见不同** — [长辈与父母起名僵持，先谈哪些条件](articles/couple-elders-naming-filter-sequence.md)
-- **想看具体名字** — [裴姓女孩名字，姗俏与怿禧的不同含义](articles/peixing-nvhai-qiming.md)
-- **想选一个喜欢的字** — [丹字取名，红色之外怎样寄意](articles/dan-character.md)
-- **担心叫起来不顺** — [定名前做三场景试念，记录哪里听不清、哪里要报字](articles/three-scene-name-voice-test-checklist.md)
-- **喜欢诗经里的字** — [从诗经鹿鸣选字，除了呦呦还能挑什么](articles/shijing-luming-character-choices-beyond-youyou.md)
-
-[浏览六篇完整图文 →](articles/README.md) · [官网起名知识](https://www.yjmbjy.com/knowledge)
+由[永嘉取名网](https://www.yjmbjy.com/)维护，开放可追溯的规范汉字数据、Python API、命令行与浏览器本地校验示例，供开发者和编辑复用。
 
 ## 规范汉字与离线校验
 
@@ -114,6 +94,19 @@ python -m http.server 8000 --bind 127.0.0.1
 - [把规范字校验接入编辑流程：机器结果与人工核对怎样配合](docs/editorial-character-checks.md)：区分字表结果、调用失败、读音字义和实际使用检查。
 
 更多资料见[技术文章目录与官网导读](docs/README.md)。
+
+## 从用字检查继续了解名字
+
+字表查询之后，还要考虑读音、含义和日常使用。这里提供六篇取名文章的简短导读，全文在官网维护。
+
+- **家里意见不同** — [长辈与父母起名僵持，先谈哪些条件](articles/couple-elders-naming-filter-sequence.md)
+- **想看具体名字** — [裴姓女孩名字，姗俏与怿禧的不同含义](articles/peixing-nvhai-qiming.md)
+- **想选一个喜欢的字** — [丹字取名，红色之外怎样寄意](articles/dan-character.md)
+- **担心叫起来不顺** — [定名前做三场景试念，记录哪里听不清、哪里要报字](articles/three-scene-name-voice-test-checklist.md)
+- **想讲清名字寓意** — [名字的好寓意，字典里都能查到吗](articles/meaning-and-family-wishes.md)
+- **喜欢诗经里的字** — [从诗经鹿鸣选字，除了呦呦还能挑什么](articles/shijing-luming-character-choices-beyond-youyou.md)
+
+[浏览取名文章导读 →](articles/README.md) · [官网起名知识](https://www.yjmbjy.com/knowledge)
 
 ## 继续了解名字：永嘉取名网
 

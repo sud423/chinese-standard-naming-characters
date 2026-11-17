@@ -1,6 +1,6 @@
 # 技术文章与延伸阅读
 
-[返回项目首页](../README.md) · [阅读完整取名文章](../articles/README.md)
+[返回项目首页](../README.md) · [取名文章导读](../articles/README.md)
 
 这里介绍规范字数据与程序接入。想看姓氏取名、用字搭配、家庭选名和诗词取字，可先去[取名文章目录](../articles/README.md)。
 

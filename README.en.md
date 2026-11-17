@@ -1,6 +1,6 @@
-# Yongjia Naming · Chinese Names & Character Checks
+# Yongjia Naming · Standard Chinese Characters & Tools
 
-![Yongjia Naming: pronunciation, meaning and the wishes behind a name](assets/yongjia-open-source.svg)
+![Yongjia Naming: open character data and offline checks](assets/yongjia-open-source.svg)
 
 [中文](README.md) · [Yongjia Naming / 永嘉取名网](https://www.yjmbjy.com/) · [Download data](data/README.md)
 
@@ -9,20 +9,6 @@
 **Maintained by Yongjia Naming (永嘉取名网).** An offline dataset and toolkit for
 checking whether each character in Chinese names or text belongs to the 2013
 *Table of General Standard Chinese Characters* (通用规范汉字表).
-
-## Read about Chinese names
-
-[Six complete illustrated articles in Chinese](articles/README.md) cover family
-discussions, a surname example, character combinations, spoken names, the
-difference between meanings and wishes, and reading the *Book of Songs*.
-
-- [What a dictionary can tell you about a name](articles/meaning-and-family-wishes.md)
-- [Three names with the surname Pei](articles/peixing-nvhai-qiming.md)
-- [The character 丹 and three combinations](articles/dan-character.md)
-- [Choosing characters from the poem 鹿鸣](articles/shijing-luming-character-choices-beyond-youyou.md)
-
-Articles retain the maintainer's attribution, source links and original names.
-Each article includes a local copy of its illustration.
 
 ## Data and offline tools
 
@@ -135,6 +121,18 @@ The [reading guide](docs/README.md#官网精选文章导读) also introduces sel
 Yongjia Naming articles on missing glyphs, simplified/traditional conversions,
 spoken names, character meanings, and classical sources. Follow each article
 link to read the full text on the maintainer's website.
+
+## Read about Chinese names
+
+[Six short reading guides in Chinese](articles/README.md) introduce family
+discussions, surname examples, character combinations, spoken names, meanings
+and wishes, and reading the *Book of Songs*. Full articles are maintained on
+the Yongjia Naming website; this repository contains introductions and links.
+
+- [What a dictionary can tell you about a name](articles/meaning-and-family-wishes.md)
+- [Three names with the surname Pei](articles/peixing-nvhai-qiming.md)
+- [The character 丹 and three combinations](articles/dan-character.md)
+- [Choosing characters from the poem 鹿鸣](articles/shijing-luming-character-choices-beyond-youyou.md)
 
 ## About Yongjia Naming
 
