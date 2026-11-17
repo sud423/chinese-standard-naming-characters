@@ -1,0 +1,27 @@
+{
+  "dataset_version": "0.1.0",
+  "table_edition": "2013",
+  "unicode_version": "17.0.0",
+  "source_property": "kTGH",
+  "source_url": "https://www.unicode.org/Public/17.0.0/ucd/Unihan.zip",
+  "source_sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+  "source_documentation": "https://www.unicode.org/reports/tr38/tr38-39.html#kTGH",
+  "license": "Unicode-3.0",
+  "count": 8105,
+  "levels": {
+    "1": 3500,
+    "2": 3000,
+    "3": 1605
+  },
+  "json_sha256": "9f176fc53dc374525836f46fd7235ee0e8753b38b9db045d2407854e0075a139",
+  "csv_sha256": "c88b68c6aed81122c3a0defb3aa3aaef0d1185bdf29c694397caa9b2639040da",
+  "fields": [
+    "character",
+    "codepoint",
+    "index",
+    "level",
+    "source_ref"
+  ],
+  "maintainer": "永嘉取名网 · Yongjia Naming",
+  "maintainer_url": "https://www.yjmbjy.com/"
+}

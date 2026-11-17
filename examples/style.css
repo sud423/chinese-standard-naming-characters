@@ -1,0 +1,485 @@
+:root {
+  --paper: #f7f3e9;
+  --ink: #193e35;
+  --muted: #566a60;
+  --line: #c8cdbd;
+  --accent: #a13d30;
+  --soft: #e9eddf;
+  --white: #fdfbf5;
+  font-family:
+    "Source Han Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-underline-offset: 0.25em;
+}
+a:hover {
+  color: var(--accent);
+}
+button,
+input {
+  font: inherit;
+}
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+button,
+input {
+  border-radius: 3px;
+}
+.masthead,
+main,
+footer {
+  width: min(1180px, calc(100% - 64px));
+  margin-inline: auto;
+}
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-decoration: none;
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", SimSun, serif;
+  font-size: 23px;
+  font-weight: 700;
+}
+.brand small {
+  display: block;
+  margin-top: 5px;
+  letter-spacing: 1.1px;
+  font: 10px sans-serif;
+  font-weight: 400;
+}
+.seal {
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: var(--paper);
+  width: 46px;
+  height: 46px;
+  font-size: 29px;
+  border-radius: 2px;
+}
+.source-link {
+  font-size: 14px;
+  white-space: nowrap;
+}
+.intro {
+  padding-top: 32px;
+}
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin: 0 0 20px;
+}
+.intro h1 {
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", SimSun, serif;
+  font-weight: 700;
+  font-size: clamp(32px, 3.6vw, 49px);
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+  margin: 0 0 36px;
+}
+.intro p {
+  line-height: 1.9;
+  max-width: 31em;
+}
+.intro .lead {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.intro > p:not(.eyebrow):not(.lead) {
+  font-size: 15px;
+  color: var(--muted);
+}
+main {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.25fr);
+  gap: 64px;
+  padding-top: 40px;
+}
+.facts {
+  display: flex;
+  gap: 28px;
+  margin: 34px 0;
+}
+.facts div {
+  min-width: 0;
+}
+.facts dt {
+  font-size: 30px;
+  font-family: Georgia, serif;
+  line-height: 1.3;
+}
+.facts dd {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 8px 0 0;
+}
+.intro .boundary {
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  margin-top: 36px;
+}
+.checker {
+  background: var(--white);
+  padding: 30px 32px;
+  min-width: 0;
+  border-top: 3px solid var(--ink);
+}
+.section-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.section-top .eyebrow {
+  margin: 0;
+}
+.checker h2 {
+  font-size: 23px;
+  margin: 30px 0 24px;
+  line-height: 1.5;
+}
+.checker label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+.input-row input {
+  width: 0;
+  flex: 1;
+  min-width: 0;
+  min-height: 52px;
+  border: 1px solid #83988b;
+  background: var(--white);
+  padding: 10px 12px;
+  font-size: 20px;
+  color: var(--ink);
+}
+.input-row button {
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 18px;
+  min-height: 52px;
+  white-space: nowrap;
+}
+.input-row button:hover:enabled {
+  background: #285547;
+}
+.hint {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin: 10px 0 20px;
+}
+.examples {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--muted);
+}
+.examples button,
+.retry {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 9px 10px;
+  min-height: 40px;
+}
+.examples button:hover:enabled,
+.retry:hover {
+  background: var(--soft);
+}
+.error {
+  color: var(--accent);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.empty-state {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 36px 0;
+  color: var(--muted);
+}
+.empty-state > span {
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  border: 1px solid var(--line);
+  font:
+    44px SimSun,
+    serif;
+  color: #91a28f;
+}
+.empty-state p {
+  font-size: 13px;
+  line-height: 1.9;
+}
+.result {
+  padding: 28px 0 12px;
+}
+.result h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+.result > p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.table-scroll {
+  overflow-x: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+}
+th,
+td {
+  padding: 14px 10px 14px 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+th {
+  color: var(--muted);
+  font-weight: 400;
+}
+td:first-child {
+  font:
+    25px SimSun,
+    serif;
+  white-space: pre;
+}
+td:nth-child(2) {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.absent {
+  color: var(--accent);
+}
+.source-note {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+}
+.source-note h3 {
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+.source-note p,
+.source-note a {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin: 4px 0;
+}
+.next-step {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  border-top: 1px solid var(--line);
+  padding: 32px 0 14px;
+  align-items: center;
+}
+.next-step .eyebrow {
+  margin-bottom: 14px;
+}
+.next-step h2 {
+  font:
+    700 24px/1.5 "Source Han Serif SC",
+    SimSun,
+    serif;
+  margin: 0;
+}
+.next-step p:not(.eyebrow) {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.next-step nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 190px;
+}
+.next-step nav a {
+  display: flex;
+  gap: 22px;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-size: 14px;
+  min-height: 44px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid var(--line);
+  padding: 24px 0 32px;
+  margin-top: 26px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 950px) {
+  main {
+    gap: 36px;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+  .checker {
+    padding: 24px;
+  }
+  .facts {
+    gap: 20px;
+  }
+  .intro h1 {
+    font-size: 34px;
+  }
+  .input-row button {
+    padding-inline: 14px;
+  }
+}
+@media (max-width: 720px) {
+  .masthead,
+  main,
+  footer {
+    width: calc(100% - 36px);
+  }
+  .masthead {
+    padding: 22px 0;
+    gap: 12px;
+  }
+  .brand {
+    font-size: 20px;
+  }
+  .brand small {
+    font-size: 8px;
+    letter-spacing: 0.7px;
+  }
+  .source-link {
+    font-size: 12px;
+  }
+  .seal {
+    width: 40px;
+    height: 40px;
+  }
+  main {
+    display: block;
+    padding-top: 20px;
+  }
+  .intro {
+    padding-top: 12px;
+  }
+  .intro h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .intro p {
+    max-width: none;
+  }
+  .facts {
+    gap: 38px;
+    margin: 24px 0;
+  }
+  .intro .boundary {
+    margin-top: 24px;
+    padding-top: 20px;
+  }
+  .checker {
+    padding: 24px 20px;
+    margin-top: 32px;
+  }
+  .checker h2 {
+    font-size: 21px;
+    margin-top: 22px;
+  }
+  .input-row {
+    gap: 8px;
+  }
+  .input-row input {
+    font-size: 18px;
+  }
+  .input-row button {
+    font-size: 14px;
+    padding-inline: 12px;
+  }
+  .section-top {
+    font-size: 11px;
+  }
+  .next-step {
+    display: block;
+    margin-top: 36px;
+    padding-top: 28px;
+  }
+  .next-step h2 {
+    font-size: 22px;
+  }
+  .next-step nav {
+    margin-top: 18px;
+  }
+  .next-step nav a {
+    max-width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1.7;
+  }
+}

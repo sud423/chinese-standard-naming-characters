@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="永嘉取名网开源示例：在浏览器本地核对姓名中的字是否位于2013版通用规范汉字表，查看规范字级别、序号与Unicode码点。"
+    />
+    <meta name="color-scheme" content="light" />
+    <title>姓名用字校验 · 永嘉取名网开源</title>
+    <link rel="icon" href="../assets/yongjia-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.mjs"></script>
+  </head>
+  <body>
+    <header class="masthead">
+      <a
+        class="brand"
+        href="https://www.yjmbjy.com/"
+        aria-label="永嘉取名网官网"
+      >
+        <span class="seal" aria-hidden="true">嘉</span>
+        <span>永嘉取名网<small>YONGJIA NAMING / OPEN SOURCE</small></span>
+      </a>
+      <a
+        class="source-link"
+        href="https://github.com/sud423/chinese-standard-naming-characters"
+        >查看源码 <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">开放数据 · 姓名用字</p>
+        <h1 id="page-title">姓名用字校验</h1>
+        <p class="lead">先核对一个字，再认真取一个名。</p>
+        <p>
+          核对每个字是否位于 2013 版《通用规范汉字表》，查看字表级别、序号与
+          Unicode 码点。
+        </p>
+        <dl class="facts">
+          <div>
+            <dt>8,105</dt>
+            <dd>个规范字</dd>
+          </div>
+          <div>
+            <dt>3</dt>
+            <dd>个字表级别</dd>
+          </div>
+          <div>
+            <dt>本地</dt>
+            <dd>处理输入文字</dd>
+          </div>
+        </dl>
+        <p class="boundary">
+          “在表”只说明字表收录情况。字义、姓氏读音、实际书写与使用场景，仍需分别核实。
+        </p>
+      </section>
+      <section class="checker" aria-labelledby="checker-title">
+        <div class="section-top">
+          <span class="eyebrow">01 / 核对用字</span
+          ><span id="data-status" role="status">正在载入字表…</span>
+        </div>
+        <h2 id="checker-title">把想核对的名字写下来</h2>
+        <form id="check-form">
+          <label for="name-input">姓名或文字</label>
+          <div class="input-row">
+            <input
+              id="name-input"
+              name="name"
+              autocomplete="off"
+              spellcheck="false"
+              maxlength="80"
+              aria-describedby="input-help"
+              placeholder="例如：李明"
+              required
+            />
+            <button id="check-button" type="submit" disabled>开始核对</button>
+          </div>
+          <p id="input-help" class="hint">
+            最多 40 个 Unicode 码点；空格、标点也会逐一检查。输入不会上传。
+          </p>
+        </form>
+        <div class="examples" aria-label="示例输入">
+          <span>试试看</span>
+          <button type="button" data-example="李明" disabled>常用字</button>
+          <button type="button" data-example="李𣲗" disabled>补充平面字</button>
+          <button type="button" data-example="李 A" disabled>
+            含空格与字母
+          </button>
+        </div>
+        <p id="error" class="error" role="alert" hidden></p>
+        <button id="retry-button" class="retry" type="button" hidden>
+          重新载入字表
+        </button>
+        <div id="result" class="result" hidden>
+          <h3 id="result-title" role="status"></h3>
+          <p id="result-detail"></p>
+          <div class="table-scroll">
+            <table>
+              <caption class="sr-only">
+                逐字核对结果
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">字</th>
+                  <th scope="col">码点</th>
+                  <th scope="col">字表记录</th>
+                </tr>
+              </thead>
+              <tbody id="result-rows"></tbody>
+            </table>
+          </div>
+        </div>
+        <div id="empty-state" class="empty-state">
+          <span aria-hidden="true">字</span>
+          <p>不自动替换繁简字或异体字。<br />保留原始输入，差异才看得清。</p>
+        </div>
+        <aside class="source-note">
+          <h3>结果依据</h3>
+          <p>2013 版字表 · Unicode 17.0.0 Unihan / kTGH</p>
+          <p>一级 3,500 字 · 二级 3,000 字 · 三级 1,605 字</p>
+          <a
+            href="https://github.com/sud423/chinese-standard-naming-characters/blob/main/DATA_SOURCES.md"
+            >查看来源、许可与复现方法 <span aria-hidden="true">↗</span></a
+          >
+        </aside>
+      </section>
+      <section class="next-step" aria-labelledby="next-title">
+        <div>
+          <p class="eyebrow">02 / 继续了解</p>
+          <h2 id="next-title">一个好名字，还需要认真读、认真想。</h2>
+          <p>永嘉取名网提供起名工具、用字资料与取名知识，供你继续比较。</p>
+        </div>
+        <nav aria-label="永嘉取名网入口">
+          <a href="https://www.yjmbjy.com/characters"
+            >查看起名用字 <span aria-hidden="true">↗</span></a
+          >
+          <a href="https://www.yjmbjy.com/baby-naming"
+            >使用宝宝起名工具 <span aria-hidden="true">↗</span></a
+          >
+          <a href="https://www.yjmbjy.com/knowledge"
+            >阅读起名知识 <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </section>
+    </main>
+    <footer>
+      <span>由永嘉取名网整理与维护</span
+      ><span>开放工具 · 来源可查 · 无追踪脚本</span>
+    </footer>
+  </body>
+</html>

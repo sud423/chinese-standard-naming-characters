@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yongjia-naming-characters"
+version = "0.1.0"
+description = "Offline checks against 8,105 standard Chinese characters, maintained by 永嘉取名网 (Yongjia Naming)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT (code); Unicode-3.0 (derived Unicode data)"}
+authors = [{name = "永嘉取名网 · Yongjia Naming"}]
+keywords = ["chinese", "hanzi", "unicode", "naming", "yongjia"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Text Processing :: Linguistic",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://www.yjmbjy.com/"
+Repository = "https://github.com/sud423/chinese-standard-naming-characters"
+Issues = "https://github.com/sud423/chinese-standard-naming-characters/issues"
+Data = "https://github.com/sud423/chinese-standard-naming-characters/blob/main/DATA_SOURCES.md"
+
+[project.scripts]
+yongjia-naming = "yongjia_naming.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["yongjia_naming*"]
+
+[tool.setuptools.package-data]
+yongjia_naming = ["data/*.json", "data/*.txt"]
