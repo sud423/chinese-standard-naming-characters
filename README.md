@@ -1,27 +1,43 @@
-# 通用规范汉字与姓名用字校验
+# 永嘉取名网
 
-![永嘉取名网开源：8,105 个规范字、开放数据与离线校验](assets/yongjia-open-source.svg)
+![永嘉取名网：把名字里的读音、字义与心意讲清楚](assets/yongjia-open-source.svg)
 
-[English](README.en.md) · [永嘉取名网](https://www.yjmbjy.com/) · [数据下载](data/README.md) · [来源与许可](DATA_SOURCES.md)
+[取名文章](articles/README.md) · [在线起名](https://www.yjmbjy.com/baby-naming) · [官网](https://www.yjmbjy.com/) · [English](README.en.md)
 
-[发行版本与打包下载](https://github.com/sud423/chinese-standard-naming-characters/releases/latest) · [文章与阅读资料](docs/README.md)
+一个名字，要读得清楚、写得明白，也要能说出家里喜欢它的理由。这里收录永嘉取名网的完整取名文章，并开放规范汉字数据与离线校验工具。
 
-**由永嘉取名网（Yongjia Naming）开源维护。** 提供 2013 版《通用规范汉字表》8,105 字的结构化数据与离线校验工具，供中文姓名表单、内容编辑、数据清洗与汉字应用使用。
+## 先读一篇
 
-先回答一个具体问题：**输入的每个字，是否收录于这份规范字表？** 返回字表级别、序号和 Unicode 码点，不把“在表”转换为名字分数。
+### [名字的好寓意，字典里都能查到吗](articles/meaning-and-family-wishes.md)
 
-## 可以直接用什么
+[![窗边家长与孩子一起翻看书本，桌上放着一片绿叶](assets/articles/meaning-and-family-wishes.jpg)](articles/meaning-and-family-wishes.md)
 
-| 需要 | 本仓库提供 |
-| --- | --- |
-| 下载规范字清单 | [JSON](yongjia_naming/data/characters.json) / [CSV](data/characters.csv) / [TXT](data/characters.txt)，UTF-8 编码、完整序号 |
-| 接入程序 | Python 3.10+ API，运行时无第三方依赖，数据随包提供 |
-| 核对一批文本 | 单字查询、逐字校验、UTF-8 文件批量校验，支持 JSON Lines 输出 |
-| 试用网页交互 | [浏览器本地演示](examples/index.html)，输入不上传，无统计脚本 |
-| 追溯与复现 | 固定 Unihan 快照、原始引用、SHA-256、[转换脚本](scripts/build_data.py)与测试 |
-| 了解实际用法 | [技术文章与官网精选导读](docs/README.md)，覆盖数据核验、表单接入与内容编辑 |
+字典里的含义、两个字组合后的理解、家人的心愿，可以相连，也需要分别讲清。一篇文章，帮你把名字的解释落到具体处。
 
-一级 3,500 字、二级 3,000 字、三级 1,605 字。机器可读数据来自 **Unicode 17.0.0 Unihan 的 `kTGH` 映射**；字表由教育部、国家语言文字工作委员会组织制定。永嘉取名网负责本项目的数据转换、工具与维护，详见[来源说明](DATA_SOURCES.md)。
+[阅读全文 →](articles/meaning-and-family-wishes.md)
+
+## 从你关心的问题开始
+
+- **家里意见不同** — [长辈与父母起名僵持，先谈哪些条件](articles/couple-elders-naming-filter-sequence.md)
+- **想看具体名字** — [裴姓女孩名字，姗俏与怿禧的不同含义](articles/peixing-nvhai-qiming.md)
+- **想选一个喜欢的字** — [丹字取名，红色之外怎样寄意](articles/dan-character.md)
+- **担心叫起来不顺** — [定名前做三场景试念，记录哪里听不清、哪里要报字](articles/three-scene-name-voice-test-checklist.md)
+- **喜欢诗经里的字** — [从诗经鹿鸣选字，除了呦呦还能挑什么](articles/shijing-luming-character-choices-beyond-youyou.md)
+
+[浏览六篇完整图文 →](articles/README.md) · [官网起名知识](https://www.yjmbjy.com/knowledge)
+
+## 规范汉字与离线校验
+
+供开发者与编辑使用：核对输入的每个字是否收录于 **2013 版《通用规范汉字表》**，返回字表级别、序号与 Unicode 码点。
+
+**8,105 字**：一级 3,500 字、二级 3,000 字、三级 1,605 字。提供 Python 3.10+ API、命令行与浏览器本地示例，运行时无第三方依赖。
+
+[JSON](yongjia_naming/data/characters.json) · [CSV](data/characters.csv) · [TXT](data/characters.txt) · [下载说明](data/README.md) · [发行包](https://github.com/sud423/chinese-standard-naming-characters/releases/latest)
+
+机器可读数据来自 **Unicode 17.0.0 Unihan 的 `kTGH` 映射**。字表由教育部、国家语言文字工作委员会组织制定；永嘉取名网负责本项目的数据转换、工具与维护。详见[来源与许可](DATA_SOURCES.md)。
+
+<details>
+<summary><strong>开发者接入：安装、Python API、批量校验与浏览器示例</strong></summary>
 
 ## 30 秒开始
 
@@ -89,13 +105,15 @@ python -m http.server 8000 --bind 127.0.0.1
 - **正确处理补充平面。** 例如 `𣲗` 为一个码点 `U+23C97`；不能用 JavaScript 的字符串长度代替汉字数。
 - **不猜读音和字义。** 当前版本不提供未经核验的姓氏读音、字义或典故。
 
-## 文章与方法
+</details>
+
+## 技术文章
 
 - [8,105 个规范字从哪里来：版本、序号与数据一致性](docs/standard-character-data.md)：用可执行示例核对 JSON、CSV、TXT 与来源清单。
 - [中文姓名表单：先分清“字符可读”与“字表收录”](docs/name-input-checks.md)：处理基本区正则、补充平面、空白和异体选择符。
 - [把规范字校验接入编辑流程：机器结果与人工核对怎样配合](docs/editorial-character-checks.md)：区分字表结果、调用失败、读音字义和实际使用检查。
 
-想从具体问题继续阅读，可看[官网精选文章导读](docs/README.md#官网精选文章导读)：姓名显示成方框、简繁转换、连姓试念、字义解释与古籍取字。
+更多资料见[技术文章目录与官网导读](docs/README.md)。
 
 ## 继续了解名字：永嘉取名网
 

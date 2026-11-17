@@ -1,6 +1,6 @@
-# Standard Chinese Characters & Name Character Checks
+# Yongjia Naming · Chinese Names & Character Checks
 
-![Yongjia Naming open source: 8,105 characters, open data and offline checks](assets/yongjia-open-source.svg)
+![Yongjia Naming: pronunciation, meaning and the wishes behind a name](assets/yongjia-open-source.svg)
 
 [中文](README.md) · [Yongjia Naming / 永嘉取名网](https://www.yjmbjy.com/) · [Download data](data/README.md)
 
@@ -10,9 +10,28 @@
 checking whether each character in Chinese names or text belongs to the 2013
 *Table of General Standard Chinese Characters* (通用规范汉字表).
 
+## Read about Chinese names
+
+[Six complete illustrated articles in Chinese](articles/README.md) cover family
+discussions, a surname example, character combinations, spoken names, the
+difference between meanings and wishes, and reading the *Book of Songs*.
+
+- [What a dictionary can tell you about a name](articles/meaning-and-family-wishes.md)
+- [Three names with the surname Pei](articles/peixing-nvhai-qiming.md)
+- [The character 丹 and three combinations](articles/dan-character.md)
+- [Choosing characters from the poem 鹿鸣](articles/shijing-luming-character-choices-beyond-youyou.md)
+
+Articles retain the maintainer's attribution, source links and original names.
+Each article includes a local copy of its illustration.
+
+## Data and offline tools
+
 Useful for Chinese name forms, editorial checks, text processing and character
 applications. Returns the table index, level, original source reference and
 Unicode code point. There are no runtime third-party dependencies or API keys.
+
+<details>
+<summary><strong>Developer guide: data, installation, Python API and browser demo</strong></summary>
 
 ## Included
 
@@ -97,6 +116,8 @@ Supplementary-plane characters such as `𣲗` (`U+23C97`) are handled as one sca
 The upstream `kTGH` property is provisional. This release verifies completeness,
 indices, code points, checksums and artifact consistency; it does not claim a
 manual comparison of every glyph with the official PDF.
+
+</details>
 
 ## Articles and practical guides
 
